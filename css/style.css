@@ -113,6 +113,10 @@ main {
         flex-direction: row;
         max-width: 998px;
     }
+
+    .card-item > .more {
+        margin-top: 2.6em;
+    }
 }
 
 /* lexend-deca-regular */
