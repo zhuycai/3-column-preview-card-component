@@ -43,8 +43,6 @@ main {
 }
 
 .item-sedans {
-    border-top-left-radius: .6em;
-    border-top-right-radius: .6em;
     background: var(--bright-orange);
 }
 
@@ -53,8 +51,6 @@ main {
 }
 
 .item-luxury {
-    border-bottom-left-radius: .6em;
-    border-bottom-right-radius: .6em;
     background: var(--very-dark-cyan);
 }
 
