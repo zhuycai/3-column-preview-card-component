@@ -33,7 +33,9 @@ main {
     display: flex;
     flex-direction: column;
     min-width: 256px;
+    border-radius: .6em;
     color: var(--very-light-gray);
+    overflow: hidden;
 }
 
 .card-item {
@@ -41,6 +43,8 @@ main {
 }
 
 .item-sedans {
+    border-top-left-radius: .6em;
+    border-top-right-radius: .6em;
     background: var(--bright-orange);
 }
 
@@ -49,6 +53,8 @@ main {
 }
 
 .item-luxury {
+    border-bottom-left-radius: .6em;
+    border-bottom-right-radius: .6em;
     background: var(--very-dark-cyan);
 }
 
@@ -70,12 +76,15 @@ main {
 }
 
 .card-item > .more {
-    height: 3em;
+    display: inline-block;
+    height: 2.6em;
     padding: 0 2em;
     /* margin-top: 1.4em; */
     border: 2px solid var(--very-light-gray);
     border-radius: 1.5em;
+    line-height: 2.6em;
     background: var(--very-light-gray);
+    cursor: pointer;
 }
 
 .item-sedans > .more {
@@ -112,6 +121,16 @@ main {
     .card {
         flex-direction: row;
         max-width: 998px;
+    }
+
+    .item-sedans {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: .6em;
+    }
+
+    .item-luxury {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: .6em;
     }
 
     .card-item > .more {
